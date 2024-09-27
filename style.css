@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Open+Sans&display=swap");
+
+:root {
+  --scollbar-track-color: white;
+  --scollbar-thumb-color: #7303c0;
+}
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: #ce8600;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Della Respira";
+}
+
+p,
+a,
+span {
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
+.learn-more {
+  padding: 10px 10px 10px 10px;
+  border-color: #2196f3;
+  border: 1px solid white;
+  transition: 0.2s ease-in-out;
+}
+
+.learn-more:hover {
+  background-color: rgb(253, 240, 240);
+  color: black;
+}
+.contact-us-btn {
+  padding: 10px 10px 10px 10px;
+  color: black;
+  border: 1px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+.contact-us-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.max-h {
+  min-height: 100vh;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.container {
+  margin: 0 10vw 0 10vw;
+}
+
+.instagram-icon {
+  transition: all 0.5s ease;
+}
+
+.instagram-icon:hover path {
+  animation: InstagramGradient 14s ease infinite;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    226deg,
+    #405de6,
+    #5b51d8,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #777737,
+    #fcaf45,
+    #ffdc80
+  );
+
+  background-size: 500% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: InstagramGradient 14s ease infinite;
+  -moz-animation: InstagramGradient 14s ease infinite;
+  -o-animation: InstagramGradient 14s ease infinite;
+  animation: InstagramGradient 14s ease infinite;
+}
+
+@keyframes InstagramGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes InstagramGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes InstagramGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes InstagramGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes InstagramGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.whatsapp:hover {
+  background: linear-gradient(270deg, #4ee12e, #2ac508, #23960a, #88c37c);
+
+  background-size: 500% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: WhatsappGradient 7s ease infinite;
+  -moz-animation: WhatsappGradient 7s ease infinite;
+  -o-animation: WhatsappGradient 7s ease infinite;
+  animation: WhatsappGradient 7s ease infinite;
+}
+
+@-webkit-keyframes WhatsappGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes WhatsappGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes WhatsappGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes WhatsappGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-text {
+  background: linear-gradient(219deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background-size: 500% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: AnimatedGradient 14s ease infinite;
+  -moz-animation: AnimatedGradient 14s ease infinite;
+  animation: AnimatedGradient 14s ease infinite;
+}
+
+.css-selector {
+  background: linear-gradient(219deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimatedGradient 14s ease infinite;
+  -moz-animation: AnimatedGradient 14s ease infinite;
+  animation: AnimatedGradient 14s ease infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes AnimatedGradient {
+  0% {
+    background-position: 86% 0%;
+  }
+  50% {
+    background-position: 15% 100%;
+  }
+  100% {
+    background-position: 86% 0%;
+  }
+}
+@-moz-keyframes AnimatedGradient {
+  0% {
+    background-position: 86% 0%;
+  }
+  50% {
+    background-position: 15% 100%;
+  }
+  100% {
+    background-position: 86% 0%;
+  }
+}
+@keyframes AnimatedGradient {
+  0% {
+    background-position: 86% 0%;
+  }
+  50% {
+    background-position: 15% 100%;
+  }
+  100% {
+    background-position: 86% 0%;
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+div[class*="div"] {
+  overflow: hidden;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #03001e;
+  width: 40vh;
+}
+.div2 {
+  grid-area: 1 / 3 / 3 / 4;
+  background-color: #2196f3;
+  height: 50vh;
+  width: 15vw;
+}
+.div3 {
+  grid-area: 2 / 2 / 4 / 3;
+  background-color: #7303c0;
+}
+.div4 {
+  grid-area: 3 / 3 / 4 / 5;
+  background-color: #ce8600;
+  width: 25vw;
+}
+
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.contact-btn {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scollbar-thumb-color) var(--scollbar-track-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scollbar-track-color);
+  /* background: linear-gradient(219deg, #03001e, #7303c0, #ec38bc, #f778d3); */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scollbar-thumb-color);
+  border-radius: 20px;
+  border: 3px solid var(--scollbar-thumb-color);
+  /* background: transparent;
+  animation: scroll-gradient 5s ease infinite;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 100000vh black; */
+}
